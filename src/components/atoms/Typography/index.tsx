@@ -1,5 +1,3 @@
-
-
 interface TypographyStyle {
   fontSize?: 'sm' | 'rg' | 'md' | 'lg' | 'xl';
   fontWeight?: 'bold' | 'semiBold' | 'regular' | 'light';

@@ -4,47 +4,25 @@ $main-colors: (
   black-transparent: #000000d9,
   background: #fff,
 );
-$colors-green: (
-  100: #eaffee,
-  400: #34A862,
+$colors-main: (
+  white: #fff,
+  black: #000,
 );
-$colors-gray: (
-  100: #fcfcfc,
-  200: #fafaf9,
-  300: #f6f6f6,
-  400: #d2d2d2,
+$colors-blue: (
+  100: #B4C6DE,
+  300: #98D0E0,
 );
 $colors-beige: (
-  100: #fff9ec,
-  200: #fff0d9,
-  300: #fae1b9,
+  100: #BB927E
 );
-$colors-red: (
-  100: #d23522,
-  200: #cb1c00,
-  300: #b61004,
-  400: #9b170d,
+$colors-pink: (
+  100: #EDC0BB,
+  300:#FE0180,
 );
-$font-title: (
-  regular: 'Nekolina',
-);
-$font-content: (
-  trenda-black: 'Trenda-Black',
-  trenda-black-italic: 'Trenda-Black-Italic',
-  trenda-bold: 'Trenda-Bold',
-  trenda-bold-italic: 'Trenda-Bold-Italic',
-  trenda-heavy: 'Trenda-Heavy',
-  trenda-heavy-italic: 'Trenda-Heavy-Italic',
-  trenda-semibold: 'Trenda-Semibold',
-  trenda-semibold-italic: 'Trenda-Semibold-Italic',
-  trenda-regular: 'Trenda-Regular',
-  trenda-regular-itatic: 'Trenda-Regular-Italic',
-  trenda-thin: 'Trenda-Thin',
-  trenda-thin-italic: 'Trenda-Thin-Italic',
-  trenda-light: 'Trenda-Light',
-  trenda-light-italic: 'Trenda-Light-Italic',
-  trenda-extralight: 'Trenda-ExtraLight',
-  trenda-extralight-italic: 'Trenda-ExtraLight-Italic',
+$font: (
+  title: 'Raleway',
+  subtitle: 'Cormorant Garamond',
+  content: 'Nunito Sans',
 );
 $mq: (
   mobile: 320px,
