@@ -1,0 +1,84 @@
+$base-font-size: 62.5%;
+$main-colors: (
+  black: #000,
+  black-transparent: #000000d9,
+  background: #fff,
+);
+$colors-green: (
+  100: #eaffee,
+  400: #34A862,
+);
+$colors-gray: (
+  100: #fcfcfc,
+  200: #fafaf9,
+  300: #f6f6f6,
+  400: #d2d2d2,
+);
+$colors-beige: (
+  100: #fff9ec,
+  200: #fff0d9,
+  300: #fae1b9,
+);
+$colors-red: (
+  100: #d23522,
+  200: #cb1c00,
+  300: #b61004,
+  400: #9b170d,
+);
+$font-title: (
+  regular: 'Nekolina',
+);
+$font-content: (
+  trenda-black: 'Trenda-Black',
+  trenda-black-italic: 'Trenda-Black-Italic',
+  trenda-bold: 'Trenda-Bold',
+  trenda-bold-italic: 'Trenda-Bold-Italic',
+  trenda-heavy: 'Trenda-Heavy',
+  trenda-heavy-italic: 'Trenda-Heavy-Italic',
+  trenda-semibold: 'Trenda-Semibold',
+  trenda-semibold-italic: 'Trenda-Semibold-Italic',
+  trenda-regular: 'Trenda-Regular',
+  trenda-regular-itatic: 'Trenda-Regular-Italic',
+  trenda-thin: 'Trenda-Thin',
+  trenda-thin-italic: 'Trenda-Thin-Italic',
+  trenda-light: 'Trenda-Light',
+  trenda-light-italic: 'Trenda-Light-Italic',
+  trenda-extralight: 'Trenda-ExtraLight',
+  trenda-extralight-italic: 'Trenda-ExtraLight-Italic',
+);
+$mq: (
+  mobile: 320px,
+  mobile-large: 375px,
+  tablet: 769px,
+  laptop: 1025px,
+  desktop: 1281px,
+  infinity: 1440px,
+);
+
+@function get-font($group, $font) {
+  @return map-get($group, $font);
+}
+
+@function rem($size) {
+  @return calc($size / 10px * 1rem);
+}
+
+@function color($group, $color) {
+  @return map-get($group, $color);
+}
+
+@mixin mq($mq-value) {
+  @media (min-width: map-get($mq, $mq-value)) {
+    @content;
+  }
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
