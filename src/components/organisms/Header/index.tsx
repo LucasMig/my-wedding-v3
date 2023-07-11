@@ -6,7 +6,7 @@ import NavLink from '@/components/atoms/NavLink';
 import { useState } from 'react';
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen] = useState(true);
   const { isMobile } = useScreenWidth();
   const mapItemID = navItems.find((item) => item.href === '#map')?.id;
 
@@ -16,27 +16,32 @@ const Header = () => {
 
   return (
     <header className="header">
+      {isMobile && (
+        <div className={`${isMenuOpen ? 'menu--open' : 'menu--closed'}`} />
+      )}
+
       {isMobile ? (
         <>
-          <nav className="navigation__container--mobile">
-            <div
-              className={`navigation__hamburger ${isMenuOpen ? 'open' : ''}`}
-            >
-              <img
-                src="/icons/close.webp"
-                alt="close-icon"
-                className="navigation__close"
-              />
-              <ul className="navigation__list">
-                {navItems
-                  .filter((item) => item.id !== mapItemID)
-                  .map((item) => {
-                    const { id, href, label } = item;
+          <nav
+            className={`navigation__container--mobile ${
+              isMenuOpen ? 'open' : ''
+            }`}
+          >
+            <img
+              src="/icons/close.webp"
+              alt="close-icon"
+              className="navigation__close"
+              onClick={handleMenuOpen}
+            />
+            <ul className="navigation__list">
+              {navItems
+                .filter((item) => item.id !== mapItemID)
+                .map((item) => {
+                  const { id, href, label } = item;
 
-                    return <NavLink key={id} label={label} href={href} />;
-                  })}
-              </ul>
-            </div>
+                  return <NavLink key={id} label={label} href={href} />;
+                })}
+            </ul>
           </nav>
           <img
             src="/images/logo-square-no-bg.webp"
