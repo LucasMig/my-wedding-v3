@@ -1,7 +1,52 @@
-const Header = () => {
-  return (
-    <div>Header</div>
-  )
-}
+import { navItems } from '@/components/organisms/Header/data';
 
-export default Header
+import './styles.scss';
+import useScreenWidth from '@/hooks/useScreenWidth';
+import NavLink from '@/components/atoms/NavLink';
+import { useState } from 'react';
+
+const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const { isMobile } = useScreenWidth();
+  const mapItemID = navItems.find((item) => item.href === '#map')?.id;
+
+  const handleMenuOpen = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  return (
+    <header className="header">
+      {isMobile ? (
+        <>
+          <nav className="navigation__container--mobile">
+            <div
+              className={`navigation__hamburger ${isMenuOpen ? 'open' : ''}`}
+            >
+              <img
+                src="/icons/close.webp"
+                alt="close-icon"
+                className="navigation__close"
+              />
+              <ul className="navigation__list">
+                {navItems
+                  .filter((item) => item.id !== mapItemID)
+                  .map((item) => {
+                    const { id, href, label } = item;
+
+                    return <NavLink key={id} label={label} href={href} />;
+                  })}
+              </ul>
+            </div>
+          </nav>
+          <img
+            src="/images/logo-square-no-bg.webp"
+            alt="pri-e-lucas-logo"
+            className="navigation__logo"
+          />
+        </>
+      ) : null}
+    </header>
+  );
+};
+
+export default Header;

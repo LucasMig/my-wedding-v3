@@ -1,1 +1,45 @@
 @import '@/shared/_variables';
+
+.header {
+  display: flex;
+}
+
+.navigation {
+  &__container {
+    &--mobile {
+      background: rgb(180 198 222 / 75%);
+      box-shadow: 0 0 rem(24px) rgb(0 0 0 / 25%);
+      height: 100%;
+      padding: rem(18px);
+      position: absolute;
+      width: 60%;
+      z-index: 1;
+    }
+  }
+
+  &__logo {
+    height: rem(100px);
+    width: rem(100px);
+  }
+
+  &__hamburger {
+    display: flex;
+    flex-direction: column;
+    gap: rem(24px);
+  }
+
+  &__list {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: rem(46px);
+    list-style: none;
+  }
+
+  &__close {
+    align-self: flex-end;
+    display: block;
+    height: rem(24px);
+    width: rem(24px);
+  }
+}
