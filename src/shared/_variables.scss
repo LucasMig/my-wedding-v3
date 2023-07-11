@@ -1,3 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,500;0,700;1,200;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,700&display=swap");
+
 $base-font-size: 62.5%;
 $main-colors: (
   black: #000,
@@ -19,7 +23,7 @@ $colors-pink: (
   100: #EDC0BB,
   300:#FE0180,
 );
-$font: (
+$fonts: (
   title: 'Raleway',
   subtitle: 'Cormorant Garamond',
   content: 'Nunito Sans',
