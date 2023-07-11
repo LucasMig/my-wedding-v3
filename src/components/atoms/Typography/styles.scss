@@ -1,0 +1,47 @@
+@import '@/shared/_variables';
+
+.typography {
+  font-family: get-font($fonts, content);
+}
+
+.typo {
+  &--size {
+    &-small {
+      font-size: 1.2rem;
+    }
+
+    &-regular {
+      font-size: rem(16px);
+    }
+    
+    &-medium {
+      font-size: rem(20px);
+    }
+    
+    &-large {
+      font-size: rem(24px);
+    }
+    
+    &-xlarge {
+      font-size: rem(32px);
+    }
+  }
+  
+  &--weight {
+    &-light {
+      font-weight: 300;
+    }
+
+    &-regular {
+      font-weight: 400;
+    }
+
+    &-semiBold {
+      font-weight: 500;
+    }
+
+    &-bold {
+      font-weight: 700;
+    }
+  }
+}
