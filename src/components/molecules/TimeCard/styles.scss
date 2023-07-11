@@ -1,14 +1,16 @@
 @import '@/shared/_variables';
 
 .timecard {
-  align-items: center;
-  background-color: color($colors-main, white);
-  border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem rgba(color($colors-main, black), 0.15);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  padding: 1rem;
-  transition: all 0.3s ease-in-out;
-  width: 100%;
+  &__container {
+    align-items: center;
+    background-color: color($colors-main, white);
+    border-radius: rem(10px);
+    box-shadow: 0 rem(5px) rem(10px) rgba(color($colors-main, black), 0.15);
+    display: flex;
+    flex-direction: column;
+    height: rem(120px);
+    justify-content: center;
+    padding: rem(10px);
+    width: rem(100px);
+  }
 }

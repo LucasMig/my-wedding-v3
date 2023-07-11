@@ -1,1 +1,30 @@
 @import '@/shared/_variables';
+
+.section {
+  &__timer {
+    &--title {}
+
+    &--countdown {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 auto;
+      max-width: rem(350px);
+    }
+
+    &--time-unit {
+      .timecard {
+        &__container {
+          background-color: color($colors-blue, 300);
+        }
+      }
+    }
+
+    &--days {}
+
+    &--hours {}
+
+    &--minutes {}
+
+    &--separator {}
+  }
+}
