@@ -7,7 +7,7 @@ import NavList from '@/components/molecules/NavList';
 import { scrollToAnchor } from '@/utils/helpers';
 
 const Header = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(true);
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { isMobile } = useScreenWidth();
   const mapItem = navItems.find((item) => item.href === '#map');
 

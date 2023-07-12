@@ -3,12 +3,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,700&display=swap");
 
 $base-font-size: 62.5%;
-$main-colors: (
-  black: #000,
-  black-transparent: rgb(0 0 0 / 20%),
-  background: #fff,
-);
 $colors-main: (
+  light-grey: #f5f5f5,
+  black-transparent: rgb(0 0 0 / 20%),
   white: #fff,
   black: #000,
   
@@ -24,6 +21,9 @@ $colors-beige: (
 $colors-pink: (
   100: #EDC0BB,
   300:#FE0180,
+);
+$colors-red: (
+  100: #ff8080,
 );
 $fonts: (
   title: 'Raleway',
