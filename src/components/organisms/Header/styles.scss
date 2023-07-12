@@ -1,7 +1,13 @@
 @import '@/shared/_variables';
 
 .header {
-  display: flex;
+  &__navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: rem(24px) rem(18px);
+    position: relative;
+  }
 }
 
 .navigation {
@@ -15,7 +21,8 @@
       height: 100vh;
       left: -100%;
       padding: rem(18px);
-      position: fixed;
+      position: absolute;
+      top: 0;
       transition: all 0.5s ease-in-out;
       width: 60%;
       z-index: 1;
@@ -31,12 +38,6 @@
     width: rem(100px);
   }
 
-  // &__hamburger {
-  //   display: flex;
-  //   flex-direction: column;
-  //   gap: rem(24px);
-  // }
-
   &__list {
     align-items: flex-start;
     display: flex;
@@ -45,11 +46,15 @@
     list-style: none;
   }
 
+  &__close, &__icon {
+    cursor: pointer;
+    height: rem(36px);
+    width: rem(36px);
+  }
+
   &__close {
     align-self: flex-end;
     display: block;
-    height: rem(24px);
-    width: rem(24px);
   }
 }
 

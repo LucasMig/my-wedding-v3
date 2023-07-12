@@ -1,0 +1,11 @@
+@import '@/shared/_variables';
+
+.navigation {
+  &__list {
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    gap: rem(46px);
+    list-style: none;
+  }
+}

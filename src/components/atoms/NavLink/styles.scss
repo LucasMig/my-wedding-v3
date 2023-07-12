@@ -2,6 +2,8 @@
 
 .navlink {
   font: 700 rem(24px) get-font($fonts, subtitle);
+  height: min-content;
+  list-style: none;
   position: relative;
 
   &__anchor {
