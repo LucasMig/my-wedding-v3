@@ -1,10 +1,10 @@
 import './App.scss';
-import Timer from '@/components/organisms/Timer';
+import HomePage from './components/pages/HomePage';
 
 function App() {
   return (
     <div className="app">
-      <Timer />
+      <HomePage />
     </div>
   );
 }

@@ -5,16 +5,18 @@
 $base-font-size: 62.5%;
 $main-colors: (
   black: #000,
-  black-transparent: #000000d9,
+  black-transparent: rgb(0 0 0 / 20%),
   background: #fff,
 );
 $colors-main: (
   white: #fff,
   black: #000,
+  
 );
 $colors-blue: (
   100: #B4C6DE,
   300: #98D0E0,
+  '100T': #b4c6debf,
 );
 $colors-beige: (
   100: #BB927E
@@ -31,7 +33,7 @@ $fonts: (
 $mq: (
   mobile: 320px,
   mobile-large: 375px,
-  tablet: 769px,
+  tablet: 768px,
   laptop: 1025px,
   desktop: 1281px,
   infinity: 1440px,
