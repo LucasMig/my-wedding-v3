@@ -1,0 +1,15 @@
+@import '@/shared/_variables';
+
+.btn {
+  background-color: color($colors-blue, 300);
+  border: none;
+  color: color($colors-main, white);
+  cursor: pointer;
+  font: rem(18px) get-font($fonts, content);
+  padding: rem(12px);
+  transition: all 0.2s ease-in-out;
+
+  &:hover, &:active {
+    background-color: color($colors-blue, 500);
+  }
+}

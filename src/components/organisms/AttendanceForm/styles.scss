@@ -1,0 +1,73 @@
+@import '@/shared/_variables';
+
+.rsvp {
+  box-shadow: 0 0.4rem 0.6rem 0.4rem color($colors-main, black-transparent);
+  display: flex;
+  flex-direction: column;
+  gap: rem(24px);
+  margin: 0 auto;
+  max-width: rem(350px);
+  padding: 2.4rem;
+
+  &__title {
+    font-family: get-font($fonts, subtitle);
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: rem(16px);
+  }
+  
+  &__checkbox {
+    cursor: pointer;
+    display: flex;
+    font: rem(16px) get-font($fonts, content);
+    gap: rem(8px);
+    margin: 0 auto;
+    position: relative;
+    user-select: none;
+    width: max-content;
+
+    &--input {
+      &-default {
+        cursor: pointer;
+        height: 0;
+        opacity: 0;
+        width: 0;
+
+        &:checked + .rsvp__checkbox--input-custom {
+          background-color: color($colors-main, light-grey);
+        }
+
+        &:checked + .rsvp__checkbox--input-custom:after {
+          opacity: 1;
+        }
+      }
+
+      &-custom {
+        background-color: color($colors-main, white);
+        border: solid 1px color($colors-beige, 100);
+        border-radius: rem(2px);
+        display: flex;
+        height: rem(20px);
+        justify-content: center;
+        left: 0;
+        top: 0;
+        transition: all 0.3s ease-in-out;
+        width: rem(20px);
+        
+        &:after {
+          border: color($colors-beige, 100) solid;
+          border-width: 0 3px 3px 0;
+          content: "";
+          height: 10px;
+          opacity: 0;
+          transform: rotate(45deg);
+          transition: all 0.1s ease-in-out;
+          width: 5px;
+        }
+      }
+    }
+  }
+}
