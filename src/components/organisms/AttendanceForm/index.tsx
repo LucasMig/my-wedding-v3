@@ -1,10 +1,11 @@
 import Typography from '@/components/atoms/Typography';
+import { formInputs } from '@/components/organisms/AttendanceForm/data';
 import { useFormik } from 'formik';
-import { useState } from 'react';
+// import { useState } from 'react';
 import * as yup from 'yup';
-
 import './styles.scss';
 import CustomInput from '@/components/molecules/CustomInput';
+import Button from '@/components/atoms/Button';
 
 interface AttendanceFormFields {
   name: string;
@@ -58,36 +59,43 @@ const AttendanceForm = () => {
         Confirme sua presença
       </Typography>
       <form className="rsvp__form" onSubmit={formik.handleSubmit}>
-        <CustomInput
-          id="name"
-          name="name"
-          type="text"
-          placeholder="Nome completo"
-          onChange={handleInputChange}
-          value={formik.values.name}
-          touched={formik.touched.name}
-          error={formik.errors.name}
-        />
-        <CustomInput
-          id="phone"
-          name="phone"
-          type="text"
-          placeholder="Telefone"
-          onChange={handleInputChange}
-          value={formik.values.phone}
-          touched={formik.touched.phone}
-          error={formik.errors.phone}
-        />
-        <CustomInput
-          id="email"
-          name="email"
-          type="email"
-          placeholder="E-mail"
-          onChange={handleInputChange}
-          value={formik.values.email}
-          touched={formik.touched.email}
-          error={formik.errors.email}
-        />
+        {formInputs.map((input) => {
+          const { id, name, type, placeholder } = input;
+          return (
+            <CustomInput
+              key={id}
+              id={id}
+              name={name}
+              type={type}
+              placeholder={placeholder}
+              onChange={handleInputChange}
+              value={
+                formik.values[name as keyof AttendanceFormFields] as string
+              }
+              touched={
+                formik.touched[name as keyof AttendanceFormFields] as boolean
+              }
+              error={
+                formik.errors[name as keyof AttendanceFormFields] as string
+              }
+            />
+          );
+        })}
+        <label htmlFor="hasPet" className="rsvp__checkbox">
+          Levará pet?
+          <input
+            id="hasPet"
+            name="hasPet"
+            type="checkbox"
+            onChange={formik.handleChange}
+            checked={formik.values.hasPet}
+            className="rsvp__checkbox--input-default"
+          />
+          <span className="rsvp__checkbox--input-custom"></span>
+        </label>
+        <Button styleClass="rsvp__form-submit" type="submit">
+          Confirmar
+        </Button>
       </form>
     </div>
   );

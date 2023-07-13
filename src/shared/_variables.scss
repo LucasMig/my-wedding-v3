@@ -4,16 +4,17 @@
 
 $base-font-size: 62.5%;
 $colors-main: (
-  light-grey: #f5f5f5,
+  light-grey: #F5F5F5,
   black-transparent: rgb(0 0 0 / 20%),
-  white: #fff,
+  white: #FFF,
   black: #000,
   
 );
 $colors-blue: (
   100: #B4C6DE,
   300: #98D0E0,
-  '100T': #b4c6debf,
+  500: #78BCCF,
+  '100T': #B4C6DEBF,
 );
 $colors-beige: (
   100: #BB927E
@@ -23,7 +24,7 @@ $colors-pink: (
   300:#FE0180,
 );
 $colors-red: (
-  100: #ff8080,
+  100: #FF8080,
 );
 $fonts: (
   title: 'Raleway',

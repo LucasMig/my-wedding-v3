@@ -7,7 +7,7 @@
   gap: rem(4px);
 }
 
-.form-input{
+.form-input {
   border: none;
   border-bottom:  1px solid color($colors-beige, 100);
   border-radius: rem(2px);
@@ -27,7 +27,7 @@
   }
 }
 
-.form-error{
+.form-error {
   color: color($colors-red, 100);
   font: rem(14px) get-font($fonts, content);
   margin-left: rem(6px);
