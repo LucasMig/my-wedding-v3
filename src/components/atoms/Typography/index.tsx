@@ -1,32 +1,28 @@
-
+import './styles.scss';
 
 interface TypographyStyle {
-  fontSize?: 'sm' | 'rg' | 'md' | 'lg' | 'xl';
-  fontWeight?: 'bold' | 'semiBold' | 'regular' | 'light';
-  color?: 'black-900' | 'white-900' | 'red-100' | 'red-200' | 'red-300';
+  fontStyles?: {
+    size: 'small' | 'regular' | 'medium' | 'large' | 'xlarge';
+    weight: 'light' | 'regular' | 'semiBold' | 'bold';
+  };
   styleClass?: string;
   children: React.ReactNode;
 }
 
 const Typography = ({
-  fontSize = 'md',
-  fontWeight = 'regular',
-  color = 'black-900',
-  children,
+  fontStyles = {
+    size: 'regular',
+    weight: 'regular',
+  },
   styleClass,
+  children,
 }: TypographyStyle) => {
-  const weight = {
-    light: 'trenda--fw-light',
-    regular: 'trenda--fw-regular',
-    semiBold: 'trenda--fw-semi-bold',
-    bold: 'trenda--fw-bold',
-  };
-
+  const { size, weight } = fontStyles;
   return (
     <p
-      className={`ty fs--${fontSize} ${weight[fontWeight]} ${color} ${
-        styleClass ?? ''
-      }`}
+      className={`typography typo--${'size-' + size} typo--${
+        'weight-' + weight
+      } ${styleClass ?? ''}`}
     >
       {children}
     </p>

@@ -1,55 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,500;0,700;1,200;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,700&display=swap");
+
 $base-font-size: 62.5%;
-$main-colors: (
+$colors-main: (
+  light-grey: #F5F5F5,
+  grey: #E5E5E5,
+  dark-grey: #C4C4C4,
+  black-transparent: rgb(0 0 0 / 20%),
+  white: #FFF,
   black: #000,
-  black-transparent: #000000d9,
-  background: #fff,
+  
 );
-$colors-green: (
-  100: #eaffee,
-  400: #34A862,
-);
-$colors-gray: (
-  100: #fcfcfc,
-  200: #fafaf9,
-  300: #f6f6f6,
-  400: #d2d2d2,
+$colors-blue: (
+  100: #B4C6DE,
+  300: #98D0E0,
+  500: #78BCCF,
+  '100T': #B4C6DEBF,
 );
 $colors-beige: (
-  100: #fff9ec,
-  200: #fff0d9,
-  300: #fae1b9,
+  100: #BB927E
+);
+$colors-pink: (
+  100: #EDC0BB,
+  300:#FE0180,
 );
 $colors-red: (
-  100: #d23522,
-  200: #cb1c00,
-  300: #b61004,
-  400: #9b170d,
+  100: #FF8080,
 );
-$font-title: (
-  regular: 'Nekolina',
-);
-$font-content: (
-  trenda-black: 'Trenda-Black',
-  trenda-black-italic: 'Trenda-Black-Italic',
-  trenda-bold: 'Trenda-Bold',
-  trenda-bold-italic: 'Trenda-Bold-Italic',
-  trenda-heavy: 'Trenda-Heavy',
-  trenda-heavy-italic: 'Trenda-Heavy-Italic',
-  trenda-semibold: 'Trenda-Semibold',
-  trenda-semibold-italic: 'Trenda-Semibold-Italic',
-  trenda-regular: 'Trenda-Regular',
-  trenda-regular-itatic: 'Trenda-Regular-Italic',
-  trenda-thin: 'Trenda-Thin',
-  trenda-thin-italic: 'Trenda-Thin-Italic',
-  trenda-light: 'Trenda-Light',
-  trenda-light-italic: 'Trenda-Light-Italic',
-  trenda-extralight: 'Trenda-ExtraLight',
-  trenda-extralight-italic: 'Trenda-ExtraLight-Italic',
+$fonts: (
+  title: 'Raleway',
+  subtitle: 'Cormorant Garamond',
+  content: 'Nunito Sans',
 );
 $mq: (
   mobile: 320px,
   mobile-large: 375px,
-  tablet: 769px,
+  tablet: 768px,
   laptop: 1025px,
   desktop: 1281px,
   infinity: 1440px,

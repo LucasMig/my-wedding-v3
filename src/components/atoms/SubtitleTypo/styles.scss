@@ -1,0 +1,15 @@
+@import '@/shared/_variables';
+
+.subtitle {
+  font-family: get-font($fonts, subtitle);
+  font-weight: 700;
+
+  &--regular {
+    font-size: rem(24px);
+    margin-bottom: rem(20px);
+  }
+
+  &--large {
+    font-size: rem(36px)
+  }
+}

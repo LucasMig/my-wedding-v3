@@ -1,0 +1,33 @@
+@import '@/shared/_variables';
+
+.navlink {
+  font: 700 rem(24px) get-font($fonts, subtitle);
+  height: min-content;
+  list-style: none;
+  position: relative;
+
+  &__anchor {
+    color: color($colors-main, black);
+    text-decoration: none;
+  }
+
+  &:before {
+    background-color: #000;
+    bottom: rem(-5px);
+    content: '';
+    display: block;
+    height: 2px;
+    position: absolute;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.2s ease-in;
+    width: 100%;
+  }
+
+  &:hover {
+    &:before {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+  }
+}
