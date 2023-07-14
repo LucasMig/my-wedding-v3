@@ -1,0 +1,16 @@
+@import '@/shared/_variables';
+
+.minimap {
+  &__container {
+    padding: rem(32px) rem(12px);
+    width: 100%;
+    
+    #minimap {
+      border-radius: rem(4px);
+      height: rem(350px);
+      margin: 0 auto;
+      width: 100%;
+      z-index: 0;
+    }
+  }
+}

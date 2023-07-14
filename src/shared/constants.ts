@@ -5,6 +5,8 @@ export const ONE_DAY = 24 * ONE_HOUR;
 
 export const WEDDING_DATE = 'Dec 17, 2023 15:00:00';
 
+export const WEDDING_COORDS = [-23.540964, -46.079376];
+
 export const MEDIA_QUERIES = {
   mobile: 320,
   tablet: 768,
