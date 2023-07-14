@@ -14,3 +14,9 @@ export const MEDIA_QUERIES = {
   desktop: 1281,
   infinity: 1440,
 } as const;
+
+export const LEAFLET_LAYERS = {
+  mapnik: 'https://tile.openstreetmap.org/{z}/{x}/{y}.png',
+  de: 'https://tile.openstreetmap.de/{z}/{x}/{y}.png',
+  hot: 'https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png',
+};

@@ -26,7 +26,11 @@ export const scrollToTop = () => {
   });
 };
 
-export const scrollToAnchor = (anchor: string) => {
+export const scrollToAnchor = (rawAnchor: string) => {
+  const anchor = rawAnchor.startsWith('#')
+    ? rawAnchor.split('#')[1]
+    : rawAnchor;
+
   const element = document.getElementById(anchor);
 
   element?.scrollIntoView({

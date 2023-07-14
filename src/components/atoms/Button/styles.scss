@@ -9,6 +9,11 @@
   padding: rem(12px);
   transition: all 0.2s ease-in-out;
 
+  &.disabled {
+    background-color: color($colors-main, dark-grey);
+    pointer-events: none;
+  }
+
   &:hover, &:active {
     background-color: color($colors-blue, 500);
   }
