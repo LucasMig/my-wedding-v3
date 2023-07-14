@@ -1,6 +1,6 @@
 import { v4 as uuid } from 'uuid';
 
-export interface NavItem {
+interface NavItem {
   id: string;
   label: string;
   href?: string;

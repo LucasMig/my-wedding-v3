@@ -1,0 +1,20 @@
+@import '@/shared/_variables';
+
+.map {
+  &__container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: rem(16px);
+    padding: rem(32px) rem(12px);
+    width: 100%;
+    
+    #map {
+      border-radius: rem(4px);
+      height: rem(350px);
+      margin: 0 auto;
+      width: 100%;
+      z-index: 0;
+    }
+  }
+}
