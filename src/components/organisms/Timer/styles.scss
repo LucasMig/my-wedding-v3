@@ -2,29 +2,23 @@
 
 .section {
   &__timer {
-    &--title {}
+    background-color: color($colors-blue, 100);
+    margin-bottom: rem(32px);
+    padding: rem(36px) 0;
 
-    &--countdown {
+    &-countdown {
       display: flex;
       justify-content: space-between;
-      margin: 0 auto;
+      margin: rem(12px) auto 0;
       max-width: rem(350px);
     }
 
-    &--time-unit {
+    &-time-unit {
       .timecard {
         &__container {
-          background-color: color($colors-blue, 300);
+          // background-color: color($colors-blue, 100);
         }
       }
     }
-
-    &--days {}
-
-    &--hours {}
-
-    &--minutes {}
-
-    &--separator {}
   }
 }
