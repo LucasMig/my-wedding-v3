@@ -1,0 +1,30 @@
+@import '@/shared/_variables';
+
+.info-card {
+  align-items: center;
+  background-color: color($colors-main, light-grey);
+  border-radius: rem(12px);
+  display: flex;
+  flex-direction: column;
+  gap: rem(6px);
+  margin: 0 auto;
+  padding: rem(12px) rem(16px);
+  width: rem(300px);
+
+  &__icon {
+    font-size: rem(32px);
+  }
+
+  &__title {
+    color: color($colors-beige, 100);
+    font:700 rem(18px) get-font($fonts, title);
+    margin: 0;
+    text-align: center;
+  }
+
+  &__content:not(:last-child) {
+    border-bottom: solid 1px color($colors-main, dark-grey);
+    padding-bottom: rem(12px);
+    width: 100%;
+  }
+}
