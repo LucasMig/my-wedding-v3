@@ -1,11 +1,19 @@
 @import '@/shared/_variables';
 
 .header {
+  backdrop-filter: blur(rem(10px));
+  background: color($colors-main, white-transparent);
+  box-shadow: 0 0 rem(24px) color($colors-main, black-transparent);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+
   &__navbar {
     align-items: center;
     display: flex;
+    height: rem(120px);
     justify-content: space-between;
-    padding: rem(24px) rem(18px);
+    padding: rem(12px) rem(18px);
     position: relative;
   }
 }
@@ -75,7 +83,7 @@
   }
 
   &--open {
-    background-color: color($main-colors, black-transparent);
+    background-color: color($colors-main, black-transparent);
     height: 100vh;
     left: 0;
     opacity: 1;

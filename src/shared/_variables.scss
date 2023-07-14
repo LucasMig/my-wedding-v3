@@ -3,15 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,300;0,400;0,700;1,200;1,300;1,400;1,700&display=swap");
 
 $base-font-size: 62.5%;
-$main-colors: (
+$colors-main: (
   black: #000,
   black-transparent: rgb(0 0 0 / 20%),
-  background: #fff,
-);
-$colors-main: (
-  white: #fff,
-  black: #000,
-  
+  white-transparent: rgb(255 255 255 / 50%),
+  white: #FFF,  
 );
 $colors-blue: (
   100: #B4C6DE,
