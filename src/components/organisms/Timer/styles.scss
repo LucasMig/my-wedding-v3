@@ -2,9 +2,12 @@
 
 .section {
   &__timer {
+    background: url('/images/banner.webp') no-repeat center center / cover;
     background-color: color($colors-blue, 100);
+    height: max-content;
     margin-bottom: rem(32px);
     padding: rem(36px) 0;
+    width: 100%;
 
     &-countdown {
       display: flex;
@@ -13,10 +16,32 @@
       max-width: rem(350px);
     }
 
+    &-title {
+      color: color($colors-main, white);
+    }
+
     &-time-unit {
       .timecard {
         &__container {
-          // background-color: color($colors-blue, 100);
+          backdrop-filter: blur(rem(2px));
+          background-color: unset;
+          border: solid 1px color($colors-main, white);
+          justify-content: space-between;
+        }
+
+        &.section__timer {
+          &-dias,
+          &-horas,
+          &-minutos {
+            color: color($colors-main, white);
+            font: 700 rem(46px) get-font($fonts, subtitle);
+          }
+        }
+
+        &__label {
+          color: color($colors-main, white);
+          font-size: rem(14px);
+          text-transform: uppercase;
         }
       }
     }

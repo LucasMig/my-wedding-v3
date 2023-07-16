@@ -18,7 +18,6 @@ $colors-main: (
   grey: #E5E5E5,
   mid-grey: #C4C4C4,
   dark-grey: #818491,
-
   black: #000,
   black-transparent: rgb(0 0 0 / 20%),
   white: #FFF,
@@ -29,7 +28,7 @@ $colors-blue: (
   200: #B4C6DE,
   300: #98D0E0,
   500: #78BCCF,
-  600: #403870,
+  600: #273771,
   '100T': #B4C6DEBF,
 );
 $colors-beige: (
@@ -38,6 +37,7 @@ $colors-beige: (
 $colors-pink: (
   100: #EDC0BB,
   300:#FE0180,
+  600: #A84058
 );
 $colors-red: (
   100: #FF8080,
