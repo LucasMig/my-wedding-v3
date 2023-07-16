@@ -2,9 +2,9 @@
 
 .section {
   &__timer {
-    background: url('/images/banner.webp') no-repeat center center / cover;
+    background: url('/images/banner-3.webp') no-repeat center 50% / cover;
     background-color: color($colors-blue, 100);
-    height: max-content;
+    height: rem(300px);
     margin-bottom: rem(32px);
     padding: rem(36px) 0;
     width: 100%;

@@ -20,6 +20,7 @@ export const createScreenWidthObject = (width: number) => {
 };
 
 export const scrollToTop = () => {
+  console.log('scrollToTop');
   window.scrollTo({
     top: 0,
     behavior: 'smooth',
