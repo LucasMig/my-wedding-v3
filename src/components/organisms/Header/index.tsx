@@ -4,7 +4,7 @@ import './styles.scss';
 import useScreenWidth from '@/hooks/useScreenWidth';
 import { useState } from 'react';
 import NavList from '@/components/molecules/NavList';
-import { scrollToAnchor } from '@/utils/helpers';
+import { scrollToAnchor, scrollToTop } from '@/utils/helpers';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -54,6 +54,9 @@ const Header = () => {
           src="/images/logo-square-no-bg.webp"
           alt="pri-e-lucas-logo"
           className="navigation__logo"
+          onClick={() => {
+            scrollToTop();
+          }}
         />
         {isMobile ? (
           <img
