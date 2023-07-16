@@ -9,11 +9,11 @@
   flex-direction: column;
   gap: rem(12px);
   margin: 0 rem(20px);
-  padding: rem(32px) rem(64px);
+  padding: rem(32px) rem(96px);
 
 
   &__icon {
-    color: color($colors-beige, 100);
+    color: color($colors-pink, 600);
     font-size: rem(32px)
   }
 
@@ -34,7 +34,7 @@
 
       &:link,
       &:visited {
-        color: color($colors-blue, 600);
+        color: color($colors-main, dark-grey);
       }
 
       &:hover,
@@ -44,7 +44,7 @@
     }
 
     &:not(:last-child) {
-      border-bottom: solid 1px color($colors-main, mid-grey);
+      border-bottom: solid 1px color($colors-blue, 100);
       padding-bottom: rem(12px);
       width: 100%;
     }

@@ -11,6 +11,17 @@
     margin: 0 auto;
     margin-top: rem(24px);
     padding: rem(24px) 0 ;
+  }
 
+  .section-divider {
+    &.custom-color {
+      img {
+        filter: invert(1);
+      }
+
+      .subtitle {
+        color: color($colors-blue, 600);
+      }
+    }
   }
 }

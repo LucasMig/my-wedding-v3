@@ -2,8 +2,7 @@ import { useEffect, useState } from 'react';
 import { ONE_SECOND, WEDDING_DATE } from '@/shared/constants';
 import { createTimerDate } from '@/utils/formatters';
 import TimeCard from '@/components/molecules/TimeCard';
-import { SubtitleTypo } from '@/components/atoms/SubtitleTypo';
-import SectionDivider from '@/components/molecules/SectionDivider';
+import { TitleTypo } from '@/components/atoms/TitleTypo';
 
 import './styles.scss';
 
@@ -26,9 +25,12 @@ const Timer = () => {
 
   return (
     <section className="section__timer">
-      <SectionDivider mirror>
-        <SubtitleTypo>O grande dia chega em...</SubtitleTypo>
-      </SectionDivider>
+      <TitleTypo
+        styleClass="section__timer-title"
+        fontStyles={{ size: 'large' }}
+      >
+        O grande dia chega em...
+      </TitleTypo>
       <div className="section__timer-countdown">
         {Object.entries(remaining).map(([key, value]) => (
           <div className="section__timer-time-unit" key={key}>

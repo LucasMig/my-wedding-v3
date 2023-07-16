@@ -7,7 +7,7 @@ import InfoCard from '@/components/molecules/InfoCard';
 const EventInfo = () => {
   return (
     <section className="event-info" id="event-info">
-      <SectionDivider variant={2}>
+      <SectionDivider mirror styleClass="custom-color">
         <SubtitleTypo>O que você precisa saber?</SubtitleTypo>
       </SectionDivider>
       <div className="event-info__container">
