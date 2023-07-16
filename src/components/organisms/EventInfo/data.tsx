@@ -23,9 +23,8 @@ export const eventInfoData = [
     icon: <HiOutlineGift />,
     title: 'O Enxoval',
     description: [
-      'Sábado, 21 de outubro de 2023',
-      'Início do chá - 16:30',
       'Ajude-nos a construir nosso lar',
+      '<a href="https://www.casar.com/lista-de-casamento/" target="_blank">Clique aqui</a> para ver nossa lista de presentes',
       'Caso prefira, pode nos presentear com dinheiro',
     ],
   },
@@ -36,7 +35,7 @@ export const eventInfoData = [
     description: [
       'A cerimônia será ao ar livre',
       'Sugerimos que você use roupas leves e confortáveis',
-      'O traje é esporte fino',
+      'Em tons pastéis ou claros (procure evitar azul e branco)',
     ],
   },
 ];

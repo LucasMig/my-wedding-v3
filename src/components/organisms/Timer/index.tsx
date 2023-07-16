@@ -26,8 +26,8 @@ const Timer = () => {
 
   return (
     <section className="section__timer">
-      <SectionDivider>
-        <SubtitleTypo>Countdown</SubtitleTypo>
+      <SectionDivider mirror>
+        <SubtitleTypo>O grande dia chega em...</SubtitleTypo>
       </SectionDivider>
       <div className="section__timer-countdown">
         {Object.entries(remaining).map(([key, value]) => (
