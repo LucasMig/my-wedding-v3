@@ -34,8 +34,8 @@ export const eventInfoData = [
     title: 'Seu traje',
     description: [
       'A cerimônia será ao ar livre',
-      'Sugerimos que você use roupas leves e confortáveis',
-      'Em tons pastéis ou claros (procure evitar azul e branco)',
+      'Use roupas leves e confortáveis',
+      'Prefira tons pastéis ou claros (procure evitar azul e branco)',
     ],
   },
 ];
