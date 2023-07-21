@@ -16,7 +16,7 @@ const CustomInput = ({
 }: CustomInputProps) => {
   return (
     <div className={`form-field ${styleClass ?? ''}`}>
-      <input {...restProps} className="form-input" />
+      <input {...restProps} className="form-input" type={type} />
       {error && touched && <span className="form-error">{error}</span>}
     </div>
   );
