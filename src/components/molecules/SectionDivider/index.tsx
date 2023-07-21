@@ -14,7 +14,7 @@ const SectionDivider = ({
   variant,
   children,
 }: SectionDividerProps) => {
-  const imgPath = `/images/branch-${variant ?? 7}.webp`;
+  const imgPath = `/images/branches/branch-${variant ?? 7}.webp`;
 
   return (
     <div className={`section-divider ${styleClass ?? ''}`}>

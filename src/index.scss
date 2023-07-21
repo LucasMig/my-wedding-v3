@@ -18,3 +18,17 @@ body {
   max-width: 130rem;
   user-select: none;
 }
+
+a {
+  transition: all 0.2s ease-in-out;
+
+  &:link,
+  &:visited {
+    color: color($colors-main, dark-grey);
+  }
+
+  &:hover,
+  &:active {
+    color: color($colors-blue, 300);
+  }
+}

@@ -28,20 +28,6 @@
   &__content {
     color: color($colors-main, dark-grey);
     font-weight: 300;
-    
-    > a {;
-      transition: all 0.2s ease-in-out;
-
-      &:link,
-      &:visited {
-        color: color($colors-main, dark-grey);
-      }
-
-      &:hover,
-      &:active {
-        color: color($colors-blue, 300);
-      }
-    }
 
     &:not(:last-child) {
       border-bottom: solid 1px color($colors-blue, 100);
