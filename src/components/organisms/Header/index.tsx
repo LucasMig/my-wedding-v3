@@ -35,6 +35,7 @@ const Header = () => {
               <ul className="navigation__list">
                 <NavList
                   navItems={navItems.filter((item) => item.id !== mapItem?.id)}
+                  toggleMenu={handleMenuOpen}
                 />
               </ul>
             </nav>

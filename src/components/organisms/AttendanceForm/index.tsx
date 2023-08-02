@@ -88,7 +88,7 @@ const AttendanceForm = () => {
   };
 
   return (
-    <div className="rsvp">
+    <div className="rsvp" id="form-rsvp">
       <Typography
         fontStyles={{
           size: 'large',
