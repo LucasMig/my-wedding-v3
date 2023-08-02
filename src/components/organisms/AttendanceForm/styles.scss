@@ -5,12 +5,16 @@
   display: flex;
   flex-direction: column;
   gap: rem(24px);
-  margin: 0 auto;
+  margin: 0 auto rem(12px);
   max-width: rem(350px);
   padding: 2.4rem;
 
+  @include scroll-margin(150px);
+
   &__title {
-    font-family: get-font($fonts, subtitle);
+    color: color($colors-blue, 600);
+    font: 500 rem(28px) get-font($fonts, subtitle);
+
   }
 
   &__form {
@@ -47,7 +51,7 @@
 
       &-custom {
         background-color: color($colors-main, white);
-        border: solid 1px color($colors-beige, 100);
+        border: solid 1px color($colors-pink, 600);
         border-radius: rem(2px);
         display: flex;
         height: rem(20px);
@@ -58,7 +62,7 @@
         width: rem(20px);
         
         &:after {
-          border: color($colors-beige, 100) solid;
+          border: color($colors-pink, 600) solid;
           border-width: 0 3px 3px 0;
           content: "";
           height: 10px;

@@ -1,0 +1,30 @@
+@import '@/shared/_variables';
+
+.form {
+  &__success-message {
+    align-items: center;
+    background-color: color($colors-green, 100);
+    border-radius: rem(2px);
+    display: flex;
+    height: 0;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+    
+    &.visible {
+      height: rem(60px);
+      opacity: 1;
+
+      @include mq(tablet) {
+        height: rem(40px);
+      }
+    }
+  }
+  
+  &__text {
+    color: color($colors-green, 400);
+    margin-bottom: 0;
+    text-align: center;
+  }
+}

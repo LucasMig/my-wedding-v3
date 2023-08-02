@@ -1,0 +1,18 @@
+@import '@/shared/_variables';
+
+.error-page {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  &__logo {
+    height: rem(250px);
+    width: rem(250px);
+  }
+
+  &__message {
+    margin-bottom: rem(50px);
+    width: rem(250px);
+  }
+}

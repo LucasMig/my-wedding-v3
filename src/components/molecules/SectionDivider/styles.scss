@@ -1,0 +1,32 @@
+@import '@/shared/_variables';
+
+.section-divider {
+  align-items: center;
+  display: flex;
+  gap: rem(50px);
+  height: rem(80px);
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+
+  h2 {
+    margin-bottom: 0;
+  }
+
+  &__img {
+    width: rem(60px);
+
+    &.left {
+      transform: rotate(90deg);
+    }
+
+    &.right {
+      transform: rotate(-90deg);
+
+      &.mirror {
+        transform: scaleX(-1) rotate(90deg)
+      }
+    }
+
+  }
+}

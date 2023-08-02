@@ -4,14 +4,13 @@ interface NavLinkProps {
   label: string;
   href?: string;
   styleClass?: string;
+  handleClick: () => void;
 }
 
-const NavLink = ({ label, href, styleClass }: NavLinkProps) => {
+const NavLink = ({ label, styleClass, handleClick }: NavLinkProps) => {
   return (
-    <li className={`navlink ${styleClass ?? ''}`}>
-      <a href={href ?? '#'} className="navlink__anchor">
-        {label}
-      </a>
+    <li className={`navlink ${styleClass ?? ''}`} onClick={handleClick}>
+      <a className="navlink__anchor">{label}</a>
     </li>
   );
 };

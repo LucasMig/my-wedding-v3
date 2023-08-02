@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 import { ONE_SECOND, WEDDING_DATE } from '@/shared/constants';
 import { createTimerDate } from '@/utils/formatters';
 import TimeCard from '@/components/molecules/TimeCard';
-import { SubtitleTypo } from '@/components/atoms/SubtitleTypo';
+import { TitleTypo } from '@/components/atoms/TitleTypo';
 
 import './styles.scss';
 
@@ -25,13 +25,16 @@ const Timer = () => {
 
   return (
     <section className="section__timer">
-      <div className="section__timer--title">
-        <SubtitleTypo>{'{ titulo_do_timer }'}</SubtitleTypo>
-      </div>
-      <div className="section__timer--countdown">
+      <TitleTypo
+        styleClass="section__timer-title"
+        fontStyles={{ size: 'large' }}
+      >
+        O grande dia chega em...
+      </TitleTypo>
+      <div className="section__timer-countdown">
         {Object.entries(remaining).map(([key, value]) => (
-          <div className="section__timer--time-unit" key={key}>
-            <TimeCard label={key} styleClass={`section__timer--${key}`}>
+          <div className="section__timer-time-unit" key={key}>
+            <TimeCard label={key} styleClass={`section__timer-${key}`}>
               {value}
             </TimeCard>
           </div>

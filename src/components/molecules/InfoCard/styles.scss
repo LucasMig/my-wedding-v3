@@ -1,0 +1,38 @@
+@import '@/shared/_variables';
+
+.info-card {
+  align-items: center;
+  background-color: color($colors-main, white);
+  border-radius: rem(2px);
+  box-shadow: 0 2px rem(4px) color($colors-main, mid-grey);
+  display: flex;
+  flex-direction: column;
+  gap: rem(12px);
+  margin: 0 rem(20px);
+  padding: rem(32px) rem(96px);
+
+
+  &__icon {
+    color: color($colors-pink, 600);
+    font-size: rem(32px)
+  }
+
+  &__title {
+    color: color($colors-blue, 600);
+    font:500 rem(18px) get-font($fonts, title);
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  &__content {
+    color: color($colors-main, dark-grey);
+    font-weight: 300;
+
+    &:not(:last-child) {
+      border-bottom: solid 1px color($colors-blue, 100);
+      padding-bottom: rem(12px);
+      width: 100%;
+    }
+  }
+}

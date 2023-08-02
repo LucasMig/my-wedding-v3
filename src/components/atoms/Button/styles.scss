@@ -10,8 +10,8 @@
   transition: all 0.2s ease-in-out;
 
   &.disabled {
-    background-color: color($colors-main, dark-grey);
-    pointer-events: none;
+    background-color: color($colors-main, mid-grey) !important;
+    pointer-events: none !important;
   }
 
   &:hover, &:active {

@@ -1,0 +1,15 @@
+@import '@/shared/_variables';
+
+.title {
+  font-family: get-font($fonts, title-cursive);
+  font-weight: 500;
+
+  &--regular {
+    font-size: rem(32px);
+    margin-bottom: rem(20px);
+  }
+
+  &--large {
+    font-size: rem(46px)
+  }
+}

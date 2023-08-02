@@ -8,7 +8,7 @@ export const formInputs = [
   {
     id: 'phone',
     name: 'phone',
-    type: 'text',
+    type: 'number',
     placeholder: 'Seu celular',
   },
   {
