@@ -3,7 +3,9 @@
 .event-info {
   margin: rem(32px) 0 rem(46px);
   width: 100%;
-  
+ 
+  @include scroll-margin(150px);
+
   &__container {
     background-color: color($colors-blue, 100);
     display: flex;
