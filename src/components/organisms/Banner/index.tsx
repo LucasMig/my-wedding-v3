@@ -5,7 +5,7 @@ interface BannerProps {
   text?: string;
 }
 
-const Banner = ({ imgPath, text }: BannerProps) => {
+const Banner = ({ imgPath }: BannerProps) => {
   return (
     <section className="banner">
       <img
