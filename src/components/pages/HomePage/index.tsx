@@ -16,6 +16,7 @@ const HomePage = () => {
       <ErrorPage
         title="Olá!"
         message="A versão desktop do site ainda não está pronta. Por enquanto, por favor acesse o site pelo celular!"
+        btnVisible={false}
       />
     );
   }
