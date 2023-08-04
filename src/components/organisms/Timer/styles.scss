@@ -1,3 +1,4 @@
+/* stylelint-disable property-no-vendor-prefix */
 @import '@/shared/_variables';
 
 .section {
@@ -23,10 +24,21 @@
     &-time-unit {
       .timecard {
         &__container {
+          -webkit-backdrop-filter: blur(rem(2px));
           backdrop-filter: blur(rem(2px));
           background-color: unset;
           border: solid 1px color($colors-main, white);
           justify-content: space-between;
+          position: relative;
+
+          &:before {
+            -webkit-backdrop-filter: blur(rem(2px));
+            backdrop-filter: blur(rem(2px));
+            content: '';
+            height: 100%;
+            position: absolute;
+            width: 100%; 
+          }
         }
 
         &.section__timer {
