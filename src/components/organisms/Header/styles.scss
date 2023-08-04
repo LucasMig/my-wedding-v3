@@ -1,7 +1,7 @@
+/* stylelint-disable property-no-vendor-prefix */
 @import '@/shared/_variables';
 
 .header {
-  backdrop-filter: blur(rem(10px));
   background: color($colors-main, white-transparent);
   box-shadow: 0 0 rem(24px) color($colors-main, black-transparent);
   position: fixed;
@@ -20,6 +20,17 @@
 
   &-margin {
     margin-top: rem(120px);
+  }
+
+  &:before {
+    -webkit-backdrop-filter: blur(rem(10px));
+    backdrop-filter: blur(rem(10px));
+    content: '';
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%; 
   }
 }
 

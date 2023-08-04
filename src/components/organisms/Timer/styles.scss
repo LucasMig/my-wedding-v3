@@ -24,12 +24,11 @@
     &-time-unit {
       .timecard {
         &__container {
-          -webkit-backdrop-filter: blur(rem(2px));
-          backdrop-filter: blur(rem(2px));
           background-color: unset;
           border: solid 1px color($colors-main, white);
           justify-content: space-between;
           position: relative;
+          z-index: 1;
 
           &:before {
             -webkit-backdrop-filter: blur(rem(2px));
@@ -37,6 +36,7 @@
             content: '';
             height: 100%;
             position: absolute;
+            top: 0;
             width: 100%; 
           }
         }
@@ -47,13 +47,15 @@
           &-minutos {
             color: color($colors-main, white);
             font: 700 rem(46px) get-font($fonts, subtitle);
+            z-index: 1;
           }
         }
-
+        
         &__label {
           color: color($colors-main, white);
           font-size: rem(14px);
           text-transform: uppercase;
+          z-index: 1;
         }
       }
     }
