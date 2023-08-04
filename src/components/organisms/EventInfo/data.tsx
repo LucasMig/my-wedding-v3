@@ -24,7 +24,7 @@ export const eventInfoData = [
     title: 'O Enxoval',
     description: [
       'Ajude-nos a construir nosso lar',
-      '<a href="https://www.casar.com/lista-de-casamento/" target="_blank">Clique aqui</a> para ver nossa lista de presentes',
+      '<a href="https://pri-e-lucas.zankyou.com/br/lista-casamento" target="_blank">Clique aqui</a> para ver nossa lista de presentes',
       'Caso prefira, pode nos presentear com dinheiro',
     ],
   },
