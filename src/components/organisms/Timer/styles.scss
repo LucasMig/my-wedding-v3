@@ -28,7 +28,7 @@
           border: solid 1px color($colors-main, white);
           justify-content: space-between;
           position: relative;
-          z-index: 1;
+          z-index: 0;
 
           &:before {
             -webkit-backdrop-filter: blur(rem(2px));
