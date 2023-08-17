@@ -6,7 +6,12 @@ import { TitleTypo } from '@/components/atoms/TitleTypo';
 
 import './styles.scss';
 
-const Timer = () => {
+interface TimerProps {
+  styleClass?: string;
+  color?: 'white' | 'black' | 'dark-blue';
+}
+
+const Timer = ({ styleClass, color = 'white' }: TimerProps) => {
   const [remaining, setRemaining] = useState(createTimerDate(0));
   const countdownDate = new Date(WEDDING_DATE).getTime();
 
@@ -24,17 +29,21 @@ const Timer = () => {
   }, []);
 
   return (
-    <section className="section__timer">
+    <section className={`section__timer ${styleClass ?? ''}`}>
       <TitleTypo
         styleClass="section__timer-title"
-        fontStyles={{ size: 'large' }}
+        fontStyles={{ size: 'large', color }}
       >
         O grande dia chega em...
       </TitleTypo>
       <div className="section__timer-countdown">
         {Object.entries(remaining).map(([key, value]) => (
           <div className="section__timer-time-unit" key={key}>
-            <TimeCard label={key} styleClass={`section__timer-${key}`}>
+            <TimeCard
+              label={key}
+              styleClass={`section__timer-${key}`}
+              color={color}
+            >
               {value}
             </TimeCard>
           </div>

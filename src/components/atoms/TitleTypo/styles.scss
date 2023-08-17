@@ -12,4 +12,16 @@
   &--large {
     font-size: rem(46px)
   }
+
+  &--black {
+    color: color($colors-main, black);
+  }
+
+  &--white {
+    color: color($colors-main, white);
+  }
+
+  &--dark-blue {
+    color: color($colors-blue, 600);
+  }
 }
