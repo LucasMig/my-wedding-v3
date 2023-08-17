@@ -9,6 +9,7 @@ import useScrollToTop from '@/hooks/useScrollToTop';
 import ErrorPage from '@/components/pages/ErrorPage';
 import Banner from '@/components/organisms/Banner';
 import { TitleTypo } from '@/components/atoms/TitleTypo';
+import Intro from '@/components/organisms/Intro';
 
 const HomePage = () => {
   const { isMobile } = useScreenWidth();
@@ -36,9 +37,8 @@ const HomePage = () => {
           — Pri & Lucas —
         </TitleTypo>
       </Banner>
-
       <Timer color="dark-blue" />
-
+      <Intro />
       <EventInfo />
       <AttendanceForm />
       <Minimap />
