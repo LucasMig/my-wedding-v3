@@ -2,6 +2,18 @@
 
 .typography {
   font-family: get-font($fonts, content);
+
+  &.white {
+    color: color($colors-main, white);
+  }
+
+  &.black {
+    color: color($colors-main, black);
+  }
+
+  &.dark-blue {
+    color: color($colors-blue, 600);
+  }
 }
 
 .typo {

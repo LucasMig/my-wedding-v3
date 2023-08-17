@@ -2,10 +2,10 @@ import './styles.scss';
 
 interface BannerProps {
   imgPath: `/images/${string}`;
-  text?: string;
+  children?: React.ReactNode;
 }
 
-const Banner = ({ imgPath }: BannerProps) => {
+const Banner = ({ imgPath, children }: BannerProps) => {
   return (
     <section className="banner">
       <img
@@ -13,6 +13,7 @@ const Banner = ({ imgPath }: BannerProps) => {
         alt={imgPath.split('/images/')[1]}
         className="banner__img"
       />
+      {children}
     </section>
   );
 };
