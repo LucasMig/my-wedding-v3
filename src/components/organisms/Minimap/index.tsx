@@ -41,18 +41,12 @@ const Minimap = () => {
           </Popup>
         </Marker>
       </MapContainer>
-      {isError && (
-        <span className="map__error">
-          Não conseguimos localizar você. Por favor, confira se a permissão de
-          localização está habilitada e recarregue a página.
-        </span>
-      )}
       <Button
         type="button"
         onClick={handleButtonClick}
         styleClass={isLoading ? 'disabled' : ''}
       >
-        Ver no Maps
+        {isLoading ? 'Carregando...' : isError ? 'Ver no Maps' : 'Traçar rota'}
       </Button>
     </section>
   );
