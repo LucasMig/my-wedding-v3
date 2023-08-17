@@ -36,6 +36,12 @@ const Minimap = () => {
           </Popup>
         </Marker>
       </MapContainer>
+      {!isLoading && (
+        <p>
+          Sua localização é {location?.coords.latitude},{' '}
+          {location?.coords.longitude}
+        </p>
+      )}
       <Button
         type="button"
         onClick={handleButtonClick}
