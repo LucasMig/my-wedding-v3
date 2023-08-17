@@ -4,7 +4,7 @@
   &__container {
     align-items: center;
     background-color: color($colors-main, white);
-    border: solid 1px color($colors-beige, 100);
+    border: solid 1px color($colors-beige, 500);
     border-radius: rem(2px);
     box-shadow: 0 rem(5px) rem(10px) rgba(color($colors-main, black), 0.15);
     display: flex;
