@@ -7,6 +7,8 @@ import Timer from '@/components/organisms/Timer';
 import useScreenWidth from '@/hooks/useScreenWidth';
 import useScrollToTop from '@/hooks/useScrollToTop';
 import ErrorPage from '@/components/pages/ErrorPage';
+import Banner from '@/components/organisms/Banner';
+import { TitleTypo } from '@/components/atoms/TitleTypo';
 
 const HomePage = () => {
   const { isMobile } = useScreenWidth();
@@ -26,7 +28,17 @@ const HomePage = () => {
   return (
     <>
       <Header />
-      <Timer />
+      <Banner imgPath="/images/park/park-2.webp">
+        <TitleTypo
+          styleClass="banner__content --text"
+          fontStyles={{ size: 'large', color: 'white' }}
+        >
+          — Pri & Lucas —
+        </TitleTypo>
+      </Banner>
+
+      <Timer color="dark-blue" />
+
       <EventInfo />
       <AttendanceForm />
       <Minimap />
