@@ -9,13 +9,18 @@ import { useEffect, useState } from 'react';
 const Minimap = () => {
   const [mapsLink, setMapsLink] = useState('');
   const [lat, lng] = WEDDING_COORDS;
-  const { location, isLoading } = useGeolocation();
+  const { location, isLoading, isError } = useGeolocation();
 
   useEffect(() => {
-    if (!isLoading && location) {
+    if (!isLoading && !isError && location) {
       const { latitude: userLat, longitude: userLng } = location.coords;
       const link = `https://www.google.com/maps/dir/?api=1&origin=${userLat},${userLng}&destination=${lat},${lng}`;
 
+      setMapsLink(link);
+    }
+
+    if (!isLoading && isError) {
+      const link = `https://www.google.com/maps?q=${lat},${lng}`;
       setMapsLink(link);
     }
   }, [isLoading]);
@@ -36,11 +41,11 @@ const Minimap = () => {
           </Popup>
         </Marker>
       </MapContainer>
-      {!isLoading && (
-        <p>
-          Sua localização é {location?.coords.latitude},{' '}
-          {location?.coords.longitude}
-        </p>
+      {isError && (
+        <span className="map__error">
+          Não conseguimos localizar você. Por favor, confira se a permissão de
+          localização está habilitada e recarregue a página.
+        </span>
       )}
       <Button
         type="button"
