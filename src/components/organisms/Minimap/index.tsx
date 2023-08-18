@@ -31,13 +31,16 @@ const Minimap = () => {
 
   return (
     <section className="map__container">
-      <MapContainer id="map" center={[lat, lng]} zoom={15}>
+      <MapContainer
+        id="map"
+        center={[lat, lng]}
+        zoom={15}
+        scrollWheelZoom={false}
+      >
         <TileLayer url={LEAFLET_LAYERS.de} />
         <Marker position={[lat, lng]}>
           <Popup autoClose={false}>
-            <div>
-              <h2>Chácara Nosso Cantinho</h2>
-            </div>
+            <span>Chácara Nosso Cantinho</span>
           </Popup>
         </Marker>
       </MapContainer>
