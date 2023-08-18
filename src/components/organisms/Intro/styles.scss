@@ -2,8 +2,6 @@
 
 .intro {
   align-items: center;
-
-  // background-color: color($colors-beige, 100);
   display: flex;
   gap: rem(24px);
   height: rem(300px);
@@ -21,12 +19,13 @@
   &__title {
     color: color($colors-blue, 600);
     font-style: italic;
-    letter-spacing: rem(2px);
+    margin-bottom: 0;
+    width: max-content;
   }
 
   &__text {
     color: color($colors-main, dark-grey);
-    text-align: justify;
+    text-align: left;
   }
   
   &__image {

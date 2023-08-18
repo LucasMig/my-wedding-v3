@@ -6,11 +6,13 @@ const Intro = () => {
   return (
     <section className="intro">
       <div className="intro__content">
-        <SubtitleTypo styleClass="intro__title">Pri e Lucas</SubtitleTypo>
+        <SubtitleTypo styleClass="intro__title">Sejam bem-vindos!</SubtitleTypo>
         <Typography styleClass="intro__text">
-          Essa é uma introdução rápida sobre nós, que vamos nos casar em
-          dezembro desse ano. Esse texto ainda será alterado e a cor de fundo
-          também!
+          Até o grande dia chegar, queremos compartilhar os detalhes importantes
+          para que possam aproveitar o momento conosco.
+          <br />
+          <br />
+          Estamos ansiosos para celebrar esse dia com vocês!
         </Typography>
       </div>
       <div className="intro__image-container">
