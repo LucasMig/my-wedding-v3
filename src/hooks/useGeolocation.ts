@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react';
 
 const useGeolocation = () => {
   const [location, setLocation] = useState<GeolocationPosition | null>(null);
-  const [isLoading, setIsLoading] = useState<boolean>(false);
+  const [isLoading, setIsLoading] = useState<boolean>(true);
   const [isError, setIsError] = useState<string | null>(null);
 
   const getGeolocation = (
